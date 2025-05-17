@@ -22,7 +22,7 @@ if [[ $OS_NAME_CI == "debian" ]]; then
 	if [[ $OS_OVERRIDE_EMSCRIPTEN == "true" ]]; then
 		sudo apt-get install emscripten
 	fi
-else if [[ $OS_NAME_CI == "arch" ]]; then
+elif [[ $OS_NAME_CI == "arch" ]]; then
 	sudo pacman -Syu lib32-gcc-libs lib32-sdl2 lib32-freetype2 lib32-fontconfig lib32-zlib lib32-bzip2 lib32-libjpeg lib32-libpng lib32-curl lib32-openal lib32-opus clang clang++
 	if [[ $OS_OVERRIDE_EMSCRIPTEN == "true" ]]; then
 		sudo pacman -S emscripten
